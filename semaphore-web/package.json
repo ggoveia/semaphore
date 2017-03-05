@@ -1,0 +1,21 @@
+{
+  "name": "semaphore",
+  "version": "1.0.0",
+  "description": "ui to access semaphore api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giuliane Ramos",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "jshint": "^2.9.4"
+  }
+}
