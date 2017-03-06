@@ -9,7 +9,6 @@
   </parent>
   <groupId>semaphore-domain</groupId>
   <artifactId>semaphore-domain</artifactId>
-  <version>1.0</version>
   <name>semaphore-domain</name>
   <url>http://maven.apache.org</url>
   <properties>
