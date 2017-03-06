@@ -1,0 +1,10 @@
+<div ng-init="$ctrl.lamp = 'G'">           
+    <div id="controlPanel">
+        <h1 id="start" class="button" ng-click="$ctrl.start(1)">Start</h1>
+    </div>
+    <div id="traffic-light">
+        <div id="goLight" class="bulb" ng-class="{'green': $ctrl.lamp == 'G', 'turnOff': $ctrl.lamp != 'G'}"></div>    
+        <div id="slowLight" class="bulb"ng-class="{'yellow': $ctrl.lamp == 'Y', 'turnOff': $ctrl.lamp != 'Y'}"></div>    
+        <div id="stopLight" class="bulb" ng-class="{'red': $ctrl.lamp == 'R', 'turnOff': $ctrl.lamp != 'R'}" ></div>
+    </div>
+</div>

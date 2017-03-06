@@ -26,7 +26,7 @@ public class SwitchTest {
 	@Test
 	public void testSwitchIsTurnedOff(){
 		NewsSwitch.TurnOff();
-		assertEquals(NewsSwitch.getStatus(), true);
+		assertEquals(NewsSwitch.getStatus(), false);
 	}
 	
 }

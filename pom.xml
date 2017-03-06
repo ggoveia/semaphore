@@ -27,8 +27,6 @@
    <modules>
   	<module>semaphore-domain</module>
         <module>semaphore-service</module>
-    <module>semaphore-infrastrucure</module>
-    <module>semaphore-infrastructure</module>
-    <module>semaphore-infraestructure</module>
+    	<module>semaphore-infraestructure</module>
   </modules>
 </project>

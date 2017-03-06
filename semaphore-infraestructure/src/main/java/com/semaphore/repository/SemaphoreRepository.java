@@ -1,22 +1,16 @@
 package com.semaphore.repository;
 
-import java.util.ArrayList;
-
 import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;
 import com.datastax.driver.core.Session;
-import com.datastax.driver.core.querybuilder.Assignment;
 import com.datastax.driver.core.querybuilder.Insert;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
-import com.datastax.driver.core.querybuilder.Select;
 import com.datastax.driver.core.querybuilder.Select.Where;
-import com.datastax.driver.core.querybuilder.Update;
 import com.datastax.driver.core.querybuilder.Update.Assignments;
 import com.datastax.driver.core.utils.UUIDs;
 
 import com.semaphore.domain.Semaphore;
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public class SemaphoreRepository {
 
