@@ -1,5 +1,8 @@
 package com.semaphore.api;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;

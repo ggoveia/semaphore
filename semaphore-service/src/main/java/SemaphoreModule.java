@@ -1,9 +1,11 @@
 package com.semaphore.api;
 
-import com.datastax.driver.core.Cluster;
-import com.datastax.driver.core.Session;
 import com.google.inject.Provides;
 import com.google.inject.servlet.ServletModule;
+
+import com.semaphore.api.rest.RestSemaphore;
+import com.semaphore.api.rest.RestSemaphoreImpl;
+import com.semaphore.api.service.*;
 
 
 public class SemaphoreModule extends ServletModule{

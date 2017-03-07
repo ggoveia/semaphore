@@ -1,6 +1,7 @@
 package com.semaphore.api.rest;
 
 import com.semaphore.api.service.SemaphoreService;
+import com.semaphore.api.*;
 
 import static org.junit.Assert.*;
 
