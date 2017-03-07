@@ -28,5 +28,9 @@
 		<servlet-name>semaphore</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+	
+	<listener>
+		<listener-class>com.semaphore.api.SemaphoreContextListener</listener-class>
+	</listener>
  
 </web-app>

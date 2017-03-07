@@ -67,6 +67,11 @@
 			<artifactId>jersey-guice</artifactId>
 			<version>1.19.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.squarespace.jersey2-guice</groupId>
+			<artifactId>jersey2-guice-impl</artifactId>
+			<version>1.0.6</version>
+		</dependency>
 	</dependencies>
  
 	<build>

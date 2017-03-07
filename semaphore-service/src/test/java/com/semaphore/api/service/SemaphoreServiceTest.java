@@ -21,7 +21,8 @@ public class SemaphoreServiceTest {
 	public void init(){
 		observable = Mockito.spy(new SemaphoreObservable());
 		observer = Mockito.spy(new SemaphoreObserver(observable));
-		service = new SemaphoreService(observable, observer);		
+		
+		service = new SemaphoreServiceImpl(observable, observer);		
 	}
 	
 	@Test

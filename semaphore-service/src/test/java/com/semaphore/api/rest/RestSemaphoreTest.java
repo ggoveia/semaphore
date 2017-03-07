@@ -19,11 +19,11 @@ public class RestSemaphoreTest {
 	@Mock
 	private SemaphoreService service;
 	
-	private RestSemaphore semaphore;
+	private RestSemaphoreImpl semaphore;
 	
 	@Before
 	public void init(){		
-		semaphore = new RestSemaphore(service);
+		semaphore = new RestSemaphoreImpl(service);
 	}
 	
 	@Test

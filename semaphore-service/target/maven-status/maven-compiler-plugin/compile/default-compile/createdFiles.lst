@@ -1,5 +1,0 @@
-com\semaphore\api\service\SemaphoreService.class
-com\semaphore\api\rest\RESTfulHelloWorld.class
-com\semaphore\api\process\SemaphoreObservable.class
-com\semaphore\api\process\SemaphoreObserver.class
-com\semaphore\api\rest\RestSemaphore.class
