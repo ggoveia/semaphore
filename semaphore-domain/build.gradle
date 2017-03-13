@@ -1,0 +1,11 @@
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.5'
+    testCompile("junit:junit")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
