@@ -24,7 +24,6 @@ import com.semaphore.model.Semaphore;
 public class SemaphoreServiceTest {
 	
 	@Mock
-	private UpdateService updateService;
 	private SemaphoreClient client;
 	
 	private Semaphore semaphore;
@@ -38,7 +37,7 @@ public class SemaphoreServiceTest {
 		semaphore = new Semaphore(1,"R");
 		Mockito.when(client.byId(1)).thenReturn(semaphore);
 		
-		serviceUnderTest = new SemaphoreServiceImpl(updateService,client);
+		serviceUnderTest = new SemaphoreService(client);
 		 
 	}
 	
@@ -46,7 +45,6 @@ public class SemaphoreServiceTest {
 	public void testTurnOnSemaphore(){
 		
 		String result = serviceUnderTest.turnOnSemaphore(1);
-        Mockito.verify(updateService, Mockito.times(3)).setNewActivedLight(anyInt(), anyString());
         assertSame("Semaphore finalized", result);
 		
 	}

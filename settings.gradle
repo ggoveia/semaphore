@@ -3,10 +3,10 @@ rootProject.name = 'semaphore'
 include 'semaphore-domain'
 include 'semaphore-api'
 include 'semaphore-client'
-include 'semaphore-infrastructure'
+include 'semaphore-middle'
 
 
 project(':semaphore-domain').projectDir = "$rootDir/semaphore-domain" as File
 project(':semaphore-api').projectDir = "$rootDir/semaphore-api" as File
 project(':semaphore-client').projectDir = "$rootDir/semaphore-client" as File
-project(':semaphore-infrastructure').projectDir = "$rootDir/semaphore-infrastructure" as File
+project(':semaphore-middle').projectDir = "$rootDir/semaphore-middle" as File

@@ -1,15 +1,19 @@
 package com.semaphore.repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
 import com.semaphore.model.Semaphore;
 
+@Service
 public class SemaphoreStaticRepository implements SemaphoreReposistory {
 	
 	private List<Semaphore> semaphoreList;
 
 	public SemaphoreStaticRepository(){
 	
+		semaphoreList = new ArrayList<>();
 		semaphoreList.add(new Semaphore(1,"G"));
 	}
 	

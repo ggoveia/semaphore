@@ -17,7 +17,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.datastax.driver.core.Session;
 import com.semaphore.infraestructure.SemaphoreInfrastructureController;
 import com.semaphore.model.Semaphore;
 import com.semaphore.repository.SemaphoreReposistory;
@@ -32,7 +31,7 @@ public class SemaphoreInfrastructureControllerTest {
 	
 	@Mock
 	private SemaphoreReposistory repository;
-	private Session session;
+	
 	
 	@InjectMocks
 	private SemaphoreInfrastructureController controllerUnderTest;

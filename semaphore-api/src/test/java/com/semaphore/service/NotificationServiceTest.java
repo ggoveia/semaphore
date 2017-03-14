@@ -14,7 +14,7 @@ public class NotificationServiceTest {
 	private SemaphoreClient client;
 	private Semaphore semaphore;
 	
-	private UpdateService updateServiceUnderTest;	
+	private SemaphoreService semaphoreServiceUnderTest;	
 	private NotificationService notificationService;
 	
 	@Before
@@ -24,8 +24,8 @@ public class NotificationServiceTest {
 		semaphore = new Semaphore(1,"G");
 		Mockito.when(client.byId(1)).thenReturn(semaphore);
 		
-		updateServiceUnderTest = new UpdateServiceImpl(client);	
-		notificationService = new NotificationServiceImpl(updateServiceUnderTest);
+		semaphoreServiceUnderTest = new SemaphoreService(client);	
+		notificationService = new NotificationService(semaphoreServiceUnderTest);
 	}
 	
 	@Test
