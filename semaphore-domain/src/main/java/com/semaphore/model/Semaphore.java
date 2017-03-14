@@ -1,8 +1,5 @@
 package com.semaphore.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Semaphore{
 
 	private int id;
